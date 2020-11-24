@@ -10,8 +10,8 @@ import {
 } from '@testing-library/react'
 import NewArticleForm from '../components/NewArticleForm'
 
-test('make sure we can submit an article', async () => {
-  const { getByPlaceholderText, getByTestId, getByText, debug } = render(
+test('Integration test to make sure we can submit input value for article', async () => {
+  const { getByPlaceholderText, getByTestId, debug } = render(
     <ArticleContextProvider>
       <NewArticleForm />
     </ArticleContextProvider>
