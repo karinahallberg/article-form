@@ -1,10 +1,10 @@
 import React from 'react'
-import Main from './Main'
+import Board from './Board'
 
 function App() {
   return (
     <div className='App'>
-      <Main />
+      <Board />
     </div>
   )
 }

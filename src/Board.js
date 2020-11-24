@@ -4,7 +4,7 @@ import ArticleContextProvider from './contexts/ArticleContext'
 import ArticleList from './components/ArticleList'
 import NewArticleForm from './components/NewArticleForm'
 
-function Main() {
+function Board() {
   return (
     <ArticleContextProvider>
       <Navbar />
@@ -14,4 +14,4 @@ function Main() {
   )
 }
 
-export default Main
+export default Board
