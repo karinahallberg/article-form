@@ -5,7 +5,9 @@ const ArticleDetails = ({ article }) => {
   const { removeArticle } = useContext(ArticleContext)
   return (
     <li onClick={() => removeArticle(article.id)}>
-      <div className='title'>{article.title}</div>
+      <div data-testid={article.title} className='title'>
+        {article.title}
+      </div>
       <div className='description'>{article.description}</div>
     </li>
   )

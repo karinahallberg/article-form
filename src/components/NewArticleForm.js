@@ -8,7 +8,7 @@ const NewArticleForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    //console.log(title, description);
+    console.log('title, description')
     addArticle(title, description)
     setTitle('')
     setDescription('')
@@ -21,6 +21,8 @@ const NewArticleForm = () => {
         placeholder='article title'
         value={title}
         onChange={(e) => setTitle(e.target.value)}
+        required
+        data-testid='article-test'
       />
       <input
         type='text'
@@ -28,7 +30,7 @@ const NewArticleForm = () => {
         value={description}
         onChange={(e) => setDescription(e.target.value)}
       />
-      <input type='submit' value='add article' />
+      <input data-testid='submit-button' type='submit' value='add article' />
     </form>
   )
 }
